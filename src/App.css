@@ -1,0 +1,14 @@
+body{
+    display: block;
+    margin-left: 20%;
+}
+.main{
+    width: 70%;
+    height: 80vh;
+    background-color: beige;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
