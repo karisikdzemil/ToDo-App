@@ -1,0 +1,22 @@
+.parent-input{
+    width: 80%;
+    height: 15vh;
+    /* background-color: red; */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    width: 80%;
+    height: 5vh;
+    border-radius: 7px;
+}
+.butt{
+    width: 10%;
+    height: 6vh;
+    background-color: rgb(50, 50, 158);
+    border: 0;
+    border-radius: 7px;
+    margin-left: 5px;
+}

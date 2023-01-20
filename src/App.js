@@ -9,6 +9,9 @@ function App() {
     <h1>THINGS TO DO</h1>
     <Input />
     <NewElement />
+    <NewElement />
+    <NewElement />
+    
   </div>
   )
 }

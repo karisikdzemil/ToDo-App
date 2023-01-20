@@ -1,0 +1,20 @@
+.parent-NewElement{
+    width: 100%;
+    height: 8vh;
+    /* background-color: rgb(255, 255, 159);    */
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid black;
+}
+.parent-New-Element-child{
+    width: 10%;
+    height: 8vh;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.check{
+    width: 100%;
+    height: 3vh;
+}
