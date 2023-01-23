@@ -1,13 +1,13 @@
 import "./Input.css"
 import { useState } from "react"
-function Input (){
+function Input (props){
     const [inputValue, setInputValue] = useState('');
     const [data, setData] = useState(inputValue)
     const change = (event) =>{
         setInputValue(event.target.value)
     }
     const enterData = () =>{
-        setData(inputValue)
+       setData(inputValue)
     }
   
     return(
