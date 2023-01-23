@@ -1,16 +1,20 @@
 import "./Input.css"
-// import { useState } from "react"
+import { useState } from "react"
 function Input (){
-    // const [vrednost, setVrednost] = useState()
-    const value = (event) =>{
-        const bet = event.target.value
-        return bet
+    const [inputValue, setInputValue] = useState('');
+    const [data, setData] = useState(inputValue)
+    const change = (event) =>{
+        setInputValue(event.target.value)
     }
-    
+    const enterData = () =>{
+        setData(inputValue)
+    }
+  
     return(
         <div className="parent-input">
-            <input onChange={value} placeholder="Enter your to do list" className="child"/>
-            <button className="butt">Enter</button>
+            <h1>{data}</h1>
+            <input onChange={change} placeholder="Enter your to do list" className="child"/>
+            <button onClick={enterData} className="butt">Enter</button>
         </div>
     )
 }
