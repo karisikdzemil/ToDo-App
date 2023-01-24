@@ -11,10 +11,16 @@ function Input (props){
     }
   
     return(
+        <div>
         <div className="parent-input">
             <h1>{data}</h1>
             <input onChange={change} placeholder="Enter your to do list" className="child"/>
             <button onClick={enterData} className="butt">Enter</button>
+        </div>
+        <NewElement/>
+        <NewElement />
+        <NewElement />
+    
         </div>
     )
 }

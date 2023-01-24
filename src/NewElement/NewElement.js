@@ -5,7 +5,7 @@ function NewElement(props) {
       <div className="parent-New-Element-child">
         <input className="check" type="checkBox" />
       </div>
-      <p>learn js and react js {props.data}</p>
+      <p>learn js and react js {props.text}</p>
     </div>
   );
 }
