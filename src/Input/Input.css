@@ -4,10 +4,11 @@
     height: 70vh;
 }
 .parent-input{
-    width: 100%;
+    width: 90%;
     height: 15vh;
     /* background-color: red; */
     margin-bottom: 10px;
+    margin-left: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
