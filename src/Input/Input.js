@@ -4,19 +4,19 @@ import { useState } from "react";
 function Input(props) {
   const DummyList = [
     {
-      id: "01",
+      id: "1",
       text: "proba1",
     },
     {
-      id: "02",
+      id: "2",
       text: "proba2",
     },
     {
-      id: "03",
+      id: "3",
       text: "proba3",
     },
     {
-      id: "04",
+      id: "4",
       text: "proba4",
     },
   ];
@@ -26,11 +26,19 @@ function Input(props) {
   const change = (event) => {
     setInputValue(event.target.value);
   };
-  const enterData = () => {
+  const [addingMembers, setAddingMembers] = useState(DummyList);
+  const newId = (el) => {
+    list.id.Number(el++);
+    toString(el);
+  };
+
+  const enterData = (arr) => {
     setData(inputValue);
-    const newList = [...DummyList, { id: "05", text: data }];
-    return console.log(<NewElement text={newList[4].text}/>)
-    // console.log(newList[4]);
+    const newList = [...addingMembers, { id: newId, text: data }];
+    const a = console.log(newList);
+    return () => {
+      setAddingMembers(a);
+    };
   };
 
   return (
@@ -51,7 +59,6 @@ function Input(props) {
         <NewElement text={list[1].text} />
         <NewElement text={list[2].text} />
         <NewElement text={list[3].text} />
-
       </div>
     </div>
   );
