@@ -27,14 +27,15 @@ function Input(props) {
     setInputValue(event.target.value);
   };
   const [addingMembers, setAddingMembers] = useState(DummyList);
-  const newId = (el) => {
-    list.id.Number(el++);
-    toString(el);
-  };
+    list.forEach(element => {
+    console.log(element.id)
+    return  console.log([...element.id, Math.random()])
+  });
+ 
 
   const enterData = (arr) => {
     setData(inputValue);
-    const newList = [...addingMembers, { id: newId, text: data }];
+    const newList = [...addingMembers, { id: "nesto", text: data }];
     const a = console.log(newList);
     return () => {
       setAddingMembers(a);
