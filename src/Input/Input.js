@@ -29,7 +29,7 @@ function Input(props) {
   const [addingMembers, setAddingMembers] = useState(DummyList);
     list.forEach(element => {
     console.log(element.id)
-    return  console.log([...element.id, Math.random()])
+    return  console.log([...element.id, Math.random(), DummyList])
   });
  
 
