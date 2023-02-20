@@ -1,14 +1,13 @@
-import Input from "./Input/Input";
-import NewElement from "./NewElement/NewElement";
-import "./App.css"
-
+import AddTodo from "./components/AddTodo";
+import TodoItem from "./components/TodoItem";
+import { useState } from "react";
 function App(props) {
-
+  
   return(
-  <div className="main">
-    <h1>THINGS TO DO</h1>
-    <Input/>
-  </div>
+    <div>
+      <AddTodo/>
+      <TodoItem/>
+    </div>
   )
 }
 
