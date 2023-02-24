@@ -5,12 +5,12 @@ import { useState } from "react";
 export default function AddTodo(props) {
   const [item, setItem] = useState("");
   const handleChange = (event) => {
-    setItem(event.target.value)
+    setItem(event.target.value);
   };
-  const handleSubmit = (e) =>{
-    e.preventDefault()
-    props.item(item)
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    props.item(item);
+  };
 
   return (
     <form onSubmit={handleSubmit} className="AddTodo" method="post">
@@ -22,7 +22,9 @@ export default function AddTodo(props) {
         name="item"
         placeholder="Enter Todo"
       />
-      <button type="submit" className="AddTodoButt">Add</button>
+      <button type="submit" className="AddTodoButt">
+        Add
+      </button>
     </form>
   );
 }
