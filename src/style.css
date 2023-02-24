@@ -1,0 +1,75 @@
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+.parent{
+ width: 40%;
+ height: 70vh;
+ background-color: #AB747B;
+ display: flex;
+ flex-direction: column;
+ /* justify-content: center; */
+ align-items: center;
+ border: 1px solid gray;
+ border-radius: 1rem;
+}
+.heading{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: whitesmoke;
+    padding: 10px;
+}
+.AddTodo{
+    width: 90%;
+    height: 15vh;
+    /* background-color: aqua; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(206, 204, 204);
+    margin-bottom: 2rem;
+}
+.AddTodoInput{
+    width: 60%;
+    height: 5vh;
+    padding-left: 10px;
+    border: 0;
+}
+.AddTodoButt{
+    width: 20%;
+    height: 5.5vh;
+    background-color: rgb(0, 0, 218);
+    border: 0;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 900;
+}
+.AddTodoItem{
+    width: 100%;
+    height: 9vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.checkTodo{
+    margin: 0 20px;
+}
+.TodoItem-p{
+ margin: 0 10px;
+ font-size: 18px;
+ color: whitesmoke;
+
+}
