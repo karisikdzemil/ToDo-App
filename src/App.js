@@ -10,7 +10,11 @@ function App(props) {
     })
   }
   const getCompleted = (id) =>{
-    console.log(id) 
+    setTodo((prevState)=>{
+      return prevState.filter((item, index)=>{
+        return index !== id
+        })
+  })
   }
   return(
    <div className="main">
