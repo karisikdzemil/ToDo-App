@@ -11,6 +11,7 @@ export default function AddTodo(props) {
     e.preventDefault();
     props.item(item);
   };
+  console.log("proba")
 
   return (
     <form onSubmit={handleSubmit} className="AddTodo" method="post">
